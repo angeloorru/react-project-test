@@ -1,12 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+//Import react library
+import React, {Component} from "react";
+import ReactDOM from "react-dom";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import Dropdown from "./components/country_dropdown";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const axios = require("axios");
+
+//Produce some html content...
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      locations: []
+    };
+  }
+
+  componentDidMount() {
+    axios.get("./resources/and_locations.js").then(locations => {
+      this.setState({locations: locations});
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <Dropdown locations={this.state.locations} />
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<App />, document.querySelector(".container"));
