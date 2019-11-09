@@ -1,4 +1,3 @@
-//Import react library
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
 
@@ -6,7 +5,6 @@ import Dropdown from "./components/country_dropdown";
 
 const axios = require("axios");
 
-//Produce some html content...
 class App extends Component {
   constructor(props) {
     super(props);
