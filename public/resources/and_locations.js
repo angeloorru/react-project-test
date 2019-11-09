@@ -82,13 +82,69 @@
     "locationInfo": {
       "country": "Italy",
       "countryId": "it-01"
-    }
+    },
+    "area": [
+      {
+        "North": [
+          {
+            "clubId": "and-01",
+            "name": "Club Pizza",
+            "city": "Milan",
+            "postCode": "M2 3DE"
+          }
+        ],
+        "South": [
+          {
+            "clubId": "and-01",
+            "name": "Club Latin",
+            "city": "Rome",
+            "postCode": "WC2B 4HN"
+          }
+        ],
+        "Centre": [
+          {
+            "clubId": "and-02",
+            "name": "Club Macchiavelli",
+            "city": "Florence",
+            "postCode": "HX1 1QE"
+          }
+        ]
+      }
+    ]
   },
   {
     "locationId": "03",
     "locationInfo": {
       "country": "Spain",
       "countryId": "es-01"
-    }
+    },
+    "area": [
+      {
+        "North": [
+          {
+            "clubId": "and-01",
+            "name": "Club Toro",
+            "city": "Zaragoza",
+            "postCode": "M2 3DE"
+          }
+        ],
+        "South": [
+          {
+            "clubId": "and-01",
+            "name": "Club La Playa ",
+            "city": "Malaga",
+            "postCode": "WC2B 4HN"
+          }
+        ],
+        "Centre": [
+          {
+            "clubId": "and-01",
+            "name": "Club Prato",
+            "city": "madrid",
+            "postCode": "HX1 1QE"
+          }
+        ]
+      }
+    ]
   }
 ]
